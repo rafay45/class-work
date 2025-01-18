@@ -316,5 +316,27 @@ console.log(convertPara.join(" "));
 document.write(convertPara.join(" "));
 
 
+let i,
+z = '';
+for (i = 0; i < 5; i = i + 2) {
+  z += i;
+}
+console.log(z);
 
+let userParagraph = ("The oldest classical British and Latin writings had little or no space between words and could be written in boustrophedon (alternating directions). Over time, text direction (left to right) became standardized. Word dividers and terminal punctuation became common. The first way to divide sentences into groups was the original paragraphos, similar to an underscore at the beginning of the new group.[1] The Greek parágraphos evolved into the pilcrow (¶), which in English manuscripts in the Middle Ages can be seen inserted inline between sentences.")
+let convertArray = userParagraph.split(" ");
+console.log(convertArray.join(" "));
+ 
+let firstWord = prompt('Enter a Old word')
+let oldWord = firstWord.split(" ")
 
+let secondWord = prompt('Enter a New word')
+let newWord = secondWord.split(" ")
+
+for(i = 0; i < convertArray.length; i++){
+    if(convertArray[i] == oldWord){
+        convertArray[i] = newWord
+    }
+}
+
+console.log(newWord.join(" "));
