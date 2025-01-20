@@ -309,11 +309,11 @@ let userA = userInpA.split(" ")
 
 for(var i = convertA.length; i < convertPara.length; i++){
       if(convertPara[i] == convertA){
-        convertPara[i] = userInpA
+        convertPara[i] = userA
       }
 }
-console.log(convertPara.join(" "));
-document.write(convertPara.join(" "));
+console.log(convertPara.join("  "));
+document.write(convertPara.join("  "));
 
 
 let i,
@@ -325,8 +325,7 @@ console.log(z);
 
 let userParagraph = ("The oldest classical British and Latin writings had little or no space between words and could be written in boustrophedon (alternating directions). Over time, text direction (left to right) became standardized. Word dividers and terminal punctuation became common. The first way to divide sentences into groups was the original paragraphos, similar to an underscore at the beginning of the new group.[1] The Greek parágraphos evolved into the pilcrow (¶), which in English manuscripts in the Middle Ages can be seen inserted inline between sentences.")
 let convertArray = userParagraph.split(" ");
-console.log(convertArray.join(" "));
- 
+
 let firstWord = prompt('Enter a Old word')
 let oldWord = firstWord.split(" ")
 
@@ -338,5 +337,103 @@ for(i = 0; i < convertArray.length; i++){
         convertArray[i] = newWord
     }
 }
-
+document.write(newWord.join(" "))
+document.write(convertArray.join(" "))
 console.log(newWord.join(" "));
+console.log(convertArray.join(" "));
+
+let lorem = ("Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima ea, iusto necessitatibus alias ullam ipsa facere consectetur aliquam eos excepturi quaerat velit expedita doloremque quam rem distinctio. Accusantium, molestias accusamus, odio animi aut tenetur voluptates harum in inventore maiores, at asperiores et rem ipsam possimus? Accusantium dolores explicabo aliquam.")
+let loremArray = lorem.split(" ")
+
+let upper = []
+
+for (var i = 0; i < loremArray.length; i++){
+   upper.push(loremArray[i][0].toUpperCase()+loremArray[i].slice(1))  
+}
+console.log(upper.join(" "));
+
+let secLorem = (`Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima ea, sit iusto necessitatibus alias ullam ipsa facere consectetur aliquam eos excepturi quaerat velit expedita doloremque quam rem distinctio. Accusantium, molestias accusamus, odio animi aut tenetur voluptates harum in inventore maiores, at asperiores et rem ipsam possimus? Accusantium dolores explicabo aliquam.`)
+let changeLlorem = 'sit'
+
+let replace = 'Javascript'
+
+
+
+for(var i = 0; i < secLorem.length; i++){
+    if(secLorem.slice(i, i + changeLlorem.length) == changeLlorem){
+        console.log("Found", [i]);
+        secLorem = (secLorem.slice(0, i) + replace + secLorem.slice(i + changeLlorem.length));
+
+    }
+    else{
+        console.log("Not Found");
+
+    }   
+}
+
+console.log(secLorem);
+
+
+let numbers = [12, 384, 76, 100, 455, 678, 3749, 1827]
+let biggestNumber = numbers[0]
+
+for (var i = 0; i < numbers.length; i++) {
+    if (numbers[i] > biggestNumber) {
+        biggestNumber = numbers[i]
+
+    }
+}
+document.write(`The Biggest Number is  ${biggestNumber}<br>`)
+
+
+ var month = prompt("Enter a month");
+ var charsInMonth = month.length;
+ if (charsInMonth > 3) {
+ monthAbbrev = month.slice(0, 3);
+ }
+ document.write(monthAbbrev)
+
+for (let i = 99; i > 0; i--) {
+    console.log(`${i} bottles of beer on the wall, ${i} bottles of beer.`);
+    console.log(`Take one down and pass it around, ${i - 1} bottles of beer on the wall.`);
+}
+console.log("No more bottles of beer on the wall!");
+
+let cleanestCities = ["Cheyenne", "Santa Fe", "Tucson", "Great Falls", "Honolulu"];
+let cityToCheck = prompt("Enter your city name:");
+
+let founds = false
+
+for (var i = 0; i < cleanestCities.length; i++){
+    if(cleanestCities[i].toLowerCase() === cityToCheck.toLowerCase()){
+        document.write(`Your city is one of the cleanest.`)
+        found = true
+        break  
+    }
+}
+
+if(!founds){
+    document.write(`Your city is not one of the cleanest.`)
+}
+
+// let cleanestCities = ["Cheyenne", "Santa Fe", "Tucson", "Great Falls", "Honolulu"];
+// let cityToCheck = prompt("Enter your city name:");
+// for (var i = 0; i <= 4; i++) {
+//     if (cityToCheck === cleanestCities[i]) {
+//         alert("It's one of the cleanest cities");
+//     }
+// }
+
+// for (var i = 4; i >= 0; i--) { console.log(i); }
+// for (var i = 0; i <= 4; i += 2) { console.log(i); }
+
+// let numElements = cleanestCities.length;  // Gives the total number of elements in cleanestCities array
+// let matchFound = false;
+// for (var i = 0; i < numElements; i++) {   // Loop from 0 to 4 (5 elements)
+//     if (cityToCheck === cleanestCities[i]) {
+//         matchFound = true;
+//         alert("It's one of the cleanest cities");
+//         break;  // Stop the loop if a match is found
+//     }
+
+
