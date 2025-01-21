@@ -1,10 +1,11 @@
 
+//Practicing "ARRAY"
+//
 firstName = ['Abdul', 'Muhammad', 'Barbar']
 lastName = ['Rafay', 'Rizwan', 'Azam']
 fullName = []
 
-
-
+//Practicing "FOR LOOP MULTIPLICATION"
 
 for (var i = 1; i <= 10; i++) {
     for (var j = 1; j <= 10; j++) {
@@ -22,6 +23,8 @@ for (var i = 1; i <= 10; i++) {
     document.write('<br>')
 }
 
+//Practicing "TRIANGLE PATTERN"
+
 for (var i = 0; i <= 5; i++) {
     for (var j = i; j <= 5; j++) {
         document.write('&nbsp;&nbsp;&nbsp')
@@ -32,6 +35,8 @@ for (var i = 0; i <= 5; i++) {
     document.write('<br>')
 }
 
+//Practicing "ATM MATHOD"
+
 let age = prompt('Enter your age')
 let salary = prompt('enter your salary')
 
@@ -40,6 +45,8 @@ if (age >= 18 && salary >= 50000) {
 } else {
     alert('incorrect information')
 }
+
+//Practicing "if else STATEMENT"
 
 let enterEmail = prompt('Add your Emial')
 alert('Email added')
@@ -55,6 +62,7 @@ if (enterEmail === loginEmail && enterPassword === loginPassword) {
     alert('incorrect!')
 }
 
+//Practicing "DUKAAN METHOD"
 
 let meet = prompt('kiska gosht chaiye(cow or got)')
 
@@ -97,6 +105,7 @@ if (meet === 'cow' || 'got') {
     alert('ghot nai hai agla laga chal')
 }
 
+//Practicing "VAR LET CONST"
 
 var num = 10
 console.log(num)
@@ -165,6 +174,7 @@ for (var i = 0; i < 10; i++) {
 }
 console.log(i);
 
+//Practicing "PALINDRON OR NOT"
 
 let userInp = prompt('Check if a number is a palindrome or not.')
 
@@ -179,6 +189,8 @@ if (result === userInp) {
     alert('This is not palindrome')
 }
 
+//Practicing "CHECK BIGGEST NAME"
+
 let fruits = ['Apple', 'Banana', 'Mango', 'Orange', 'Grapes', 'Pineapple', 'Watermelon', 'Pomegranate', 'Guava', 'Papaya']
 
 let biggestName = fruits[0]
@@ -190,12 +202,14 @@ for (var i = 0; i < fruits.length; i++) {
 }
 console.log(`The longest fruits is ${biggestName}`)
 
-
+// Practing "SLICE"
 
 let fruit = ['Apple', 'Banana', 'Mango', 'Orange', 'Grapes', 'Pineapple', 'Watermelon', 'Pomegranate', 'Guava', 'Papaya']
 
 let slicedFruits = fruit.slice(1, 4)
 console.log(slicedFruits);
+
+//Practicing "ATTENDANCE REGISTER"
 
 let sir = prompt(`Sir, call  \n Rafay \n Wasay \n Sahiban \n Hamza`)
 
@@ -215,7 +229,7 @@ if (isPresent) {
     alert('Sir, Please call right student')
 }
 
-
+//Practicing "PALINDRON OR NOT"
 
 var str = "madam";
 var reversestr = "";
@@ -230,7 +244,8 @@ else {
     console.log
         (" this is not a plaindrome word");
 }
-
+ 
+//racticing "TABLE START & END"
 
 let start = prompt('Enter a start number')
 let table = prompt('Enrer a table number')
@@ -240,6 +255,7 @@ for (var i = start; i <= end; i++) {
     document.write(`${table} x ${i} = ${table * i} <br>`)
 }
 
+//Practicing "ELSE IF STATEMENT"
 
 let weather = prompt('How is the weather');
 if (weather == 'sunny') {
@@ -252,6 +268,8 @@ if (weather == 'sunny') {
     document.write("nothing")
 }
 
+//Practicing "CHECK AMOUNT"
+
 var userinp = +prompt('enter your amount');
 
 var amount = 20000
@@ -261,7 +279,7 @@ if (amount > '20000') {
     document.write(`amount are available ${amount - userinp}`)
 }
 
-
+//Praciting "REPLACE THE WORDS" 
 
 let userPara = prompt('Enter a para')
 
@@ -291,7 +309,8 @@ if(found){
     }
 
     document.write(convert.join(" "));
-
+ 
+//Praciting "REPLACE THE WORDS" 
 
 let paragraph = ('Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long.')
 
@@ -323,6 +342,8 @@ for (i = 0; i < 5; i = i + 2) {
 }
 console.log(z);
 
+//Praciting "REPLACE THE WORDS" 
+
 let userParagraph = ("The oldest classical British and Latin writings had little or no space between words and could be written in boustrophedon (alternating directions). Over time, text direction (left to right) became standardized. Word dividers and terminal punctuation became common. The first way to divide sentences into groups was the original paragraphos, similar to an underscore at the beginning of the new group.[1] The Greek parágraphos evolved into the pilcrow (¶), which in English manuscripts in the Middle Ages can be seen inserted inline between sentences.")
 let convertArray = userParagraph.split(" ");
 
@@ -342,6 +363,8 @@ document.write(convertArray.join(" "))
 console.log(newWord.join(" "));
 console.log(convertArray.join(" "));
 
+//Praciting "REPLACE THE WORDS" 
+
 let lorem = ("Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima ea, iusto necessitatibus alias ullam ipsa facere consectetur aliquam eos excepturi quaerat velit expedita doloremque quam rem distinctio. Accusantium, molestias accusamus, odio animi aut tenetur voluptates harum in inventore maiores, at asperiores et rem ipsam possimus? Accusantium dolores explicabo aliquam.")
 let loremArray = lorem.split(" ")
 
@@ -351,6 +374,8 @@ for (var i = 0; i < loremArray.length; i++){
    upper.push(loremArray[i][0].toUpperCase()+loremArray[i].slice(1))  
 }
 console.log(upper.join(" "));
+
+//Praciting "REPLACE THE WORDS" 
 
 let secLorem = (`Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima ea, sit iusto necessitatibus alias ullam ipsa facere consectetur aliquam eos excepturi quaerat velit expedita doloremque quam rem distinctio. Accusantium, molestias accusamus, odio animi aut tenetur voluptates harum in inventore maiores, at asperiores et rem ipsam possimus? Accusantium dolores explicabo aliquam.`)
 let changeLlorem = 'sit'
@@ -373,6 +398,7 @@ for(var i = 0; i < secLorem.length; i++){
 
 console.log(secLorem);
 
+//Practicing "CHECK THE BIGGEST NUMBER"
 
 let numbers = [12, 384, 76, 100, 455, 678, 3749, 1827]
 let biggestNumber = numbers[0]
@@ -385,6 +411,7 @@ for (var i = 0; i < numbers.length; i++) {
 }
 document.write(`The Biggest Number is  ${biggestNumber}<br>`)
 
+//Practicing "FOR LOOP"
 
  var month = prompt("Enter a month");
  var charsInMonth = month.length;
@@ -398,6 +425,8 @@ for (let i = 99; i > 0; i--) {
     console.log(`Take one down and pass it around, ${i - 1} bottles of beer on the wall.`);
 }
 console.log("No more bottles of beer on the wall!");
+
+//Practicing "FLAG AND BREAK"
 
 let cleanestCities = ["Cheyenne", "Santa Fe", "Tucson", "Great Falls", "Honolulu"];
 let cityToCheck = prompt("Enter your city name:");
@@ -416,24 +445,86 @@ if(!founds){
     document.write(`Your city is not one of the cleanest.`)
 }
 
+//Practicing "FOR LOOP"
+
 // let cleanestCities = ["Cheyenne", "Santa Fe", "Tucson", "Great Falls", "Honolulu"];
 // let cityToCheck = prompt("Enter your city name:");
 // for (var i = 0; i <= 4; i++) {
 //     if (cityToCheck === cleanestCities[i]) {
 //         alert("It's one of the cleanest cities");
-//     }
-// }
+    
 
-// for (var i = 4; i >= 0; i--) { console.log(i); }
-// for (var i = 0; i <= 4; i += 2) { console.log(i); }
 
-// let numElements = cleanestCities.length;  // Gives the total number of elements in cleanestCities array
-// let matchFound = false;
-// for (var i = 0; i < numElements; i++) {   // Loop from 0 to 4 (5 elements)
-//     if (cityToCheck === cleanestCities[i]) {
-//         matchFound = true;
-//         alert("It's one of the cleanest cities");
-//         break;  // Stop the loop if a match is found
-//     }
+//Practicing "INCREMENT & DECREMENT"
+
+for (var i = 4; i >= 0; i--) { console.log(i); }
+for (var i = 0; i <= 4; i += 2) { console.log(i); }
+
+
+
+
+//Practicing "JS STRING METHODS"
+
+let text = "Hello World My name is Rafay Hello there! Rafay is  a bad boy"
+var check = text.lastIndexOf("Hello")
+console.log(text)
+console.log(check);
+
+var check = text.indexOf("Rafay")
+console.log(text)
+console.log(check);
+
+var check = text.charAt(0);
+console.log(text)
+console.log(check);
+
+var check = text.charCodeAt(1);
+console.log(text)
+console.log(check);
+
+var check = text.at(26);
+console.log(text)
+console.log(check);
+
+var check = text.toLowerCase();
+console.log(text)
+console.log(check);
+
+var check = text.toUpperCase();
+console.log(text)
+console.log(check);
+
+var check = text.includes("Rafay", 20);
+console.log(text)
+console.log(check);
+
+var check = text.search("Rafay");
+console.log(text)
+console.log(check);
+
+var check = text.slice(0 , 23);
+console.log(text)
+console.log(check);
+
+var check = text.split(" ");
+console.log(text)
+console.log(check);
+
+var check = text.replace(/Rafay/g, "Wasay");
+console.log(text)
+console.log(check);
+
+var check = text.replace(/RAFAY/ig, "Wasay");
+console.log(text)
+console.log(check);
+
+var check = text.repeat(2);
+console.log(text)
+console.log(check);
+
+var check = text.replaceAll("Hello" , "hello");
+console.log(text)
+console.log(check);
+
 
 
