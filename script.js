@@ -174,7 +174,7 @@ for (var i = 0; i < 10; i++) {
 }
 console.log(i);
 
-//Practicing "PALINDRON OR NOT"
+//Practicing "PALINDROM OR NOT"
 
 let userInp = prompt('Check if a number is a palindrome or not.')
 
@@ -244,7 +244,7 @@ else {
     console.log
         (" this is not a plaindrome word");
 }
- 
+
 //racticing "TABLE START & END"
 
 let start = prompt('Enter a start number')
@@ -281,7 +281,7 @@ if (amount > '20000') {
 
 //Praciting "REPLACE THE WORDS" 
 
-let userPara = prompt('Enter a para')
+let userParas = prompt('Enter a para')
 
 let convert = userPara.split(" ")
 
@@ -309,7 +309,7 @@ if(found){
     }
 
     document.write(convert.join(" "));
- 
+
 //Praciting "REPLACE THE WORDS" 
 
 let paragraph = ('Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long.')
@@ -452,7 +452,7 @@ if(!founds){
 // for (var i = 0; i <= 4; i++) {
 //     if (cityToCheck === cleanestCities[i]) {
 //         alert("It's one of the cleanest cities");
-    
+
 
 
 //Practicing "INCREMENT & DECREMENT"
@@ -525,6 +525,48 @@ console.log(check);
 var check = text.replaceAll("Hello" , "hello");
 console.log(text)
 console.log(check);
+
+for (var i = 0; i < 10; i++) {
+    console.log(i);
+    for (var j = 10; j < 13; j++) {
+        console.log(j);
+
+    }
+
+}
+
+// Practicing "JS FUNCTIONS"
+
+let userPara = (`<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Eius sapiente inventore, eligendi nesciunt nisi ea laboriosam 
+    non tenetur consequuntur dolor vitae assumenda, aspernatur autem iure, iusto explicabo vel?
+    Voluptatibus, culpa.`)
+    document.write(userPara)
+
+function user() {
+    let replaceWord = prompt('which word you want to replace').toLowerCase();
+    let secReplaceWord = prompt('Enter New word').toLowerCase()  
+   userPara = userPara.replaceAll(replaceWord , "<b>" + secReplaceWord + "</b>") 
+   document.write(userPara) 
+}
+
+function userFunction(){
+    let userWant = prompt(`If you want to check your word Then Enter your word \n let's check`)
+    let checked = "";
+    for (var i = userWant.length - 1; i >= 0; i--){
+           checked += userWant[i]
+    }
+    if(checked === userWant) {
+        alert('This is a palindrom')
+    }else{
+            alert('This is not palindrom')
+    }
+}
+
+
+
+
+
 
 
 
