@@ -191,7 +191,8 @@ if (result === userInp) {
 
 //Practicing "CHECK BIGGEST NAME"
 
-let fruits = ['Apple', 'Banana', 'Mango', 'Orange', 'Grapes', 'Pineapple', 'Watermelon', 'Pomegranate', 'Guava', 'Papaya']
+let fruits = [`Apple', 'Banana', 'Mango', 'Orange', 'Grapes', 'Pineapple',
+     'Watermelon', 'Pomegranate', 'Guava', 'Papaya`]
 
 let biggestName = fruits[0]
 
@@ -204,7 +205,8 @@ console.log(`The longest fruits is ${biggestName}`)
 
 // Practing "SLICE"
 
-let fruit = ['Apple', 'Banana', 'Mango', 'Orange', 'Grapes', 'Pineapple', 'Watermelon', 'Pomegranate', 'Guava', 'Papaya']
+let fruit = [`Apple', 'Banana', 'Mango', 'Orange', 'Grapes', 'Pineapple',
+     'Watermelon', 'Pomegranate', 'Guava', 'Papaya`]
 
 let slicedFruits = fruit.slice(1, 4)
 console.log(slicedFruits);
@@ -312,7 +314,11 @@ if(found){
 
 //Praciting "REPLACE THE WORDS" 
 
-let paragraph = ('Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long.')
+let paragraph = (`Length and appearance do not determine whether a section 
+    in a paper is a paragraph. For instance, in some styles of writing, particularly
+     journalistic styles, a paragraph can be just one sentence long Length and appearance 
+     do not determine whether a section in a paper is a paragraph. For instance, in some styles 
+     of writing, particularly journalistic styles, a paragraph can be just one sentence long.`)
 
 
 let convertPara = paragraph.split(" ");
@@ -344,7 +350,13 @@ console.log(z);
 
 //Praciting "REPLACE THE WORDS" 
 
-let userParagraph = ("The oldest classical British and Latin writings had little or no space between words and could be written in boustrophedon (alternating directions). Over time, text direction (left to right) became standardized. Word dividers and terminal punctuation became common. The first way to divide sentences into groups was the original paragraphos, similar to an underscore at the beginning of the new group.[1] The Greek parágraphos evolved into the pilcrow (¶), which in English manuscripts in the Middle Ages can be seen inserted inline between sentences.")
+let userParagraph = (`The oldest classical British and Latin writings had little or no space
+     between words and could be written in boustrophedon (alternating directions). Over time,
+      text direction (left to right) became standardized. Word dividers and terminal punctuation 
+      became common. The first way to divide sentences into groups was the original paragraphos,
+       similar to an underscore at the beginning of the new group.[1] The Greek parágraphos evolved
+        into the pilcrow (¶), which in English manuscripts in the Middle Ages can be seen inserted
+         inline between sentences.`)
 let convertArray = userParagraph.split(" ");
 
 let firstWord = prompt('Enter a Old word')
@@ -365,7 +377,11 @@ console.log(convertArray.join(" "));
 
 //Praciting "REPLACE THE WORDS" 
 
-let lorem = ("Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima ea, iusto necessitatibus alias ullam ipsa facere consectetur aliquam eos excepturi quaerat velit expedita doloremque quam rem distinctio. Accusantium, molestias accusamus, odio animi aut tenetur voluptates harum in inventore maiores, at asperiores et rem ipsam possimus? Accusantium dolores explicabo aliquam.")
+let lorem = (`Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Veritatis minima ea, iusto necessitatibus alias ullam ipsa facere consectetur
+      aliquam eos excepturi quaerat velit expedita doloremque quam rem distinctio.
+       Accusantium, molestias accusamus, odio animi aut tenetur voluptates harum in inventore maiores,
+        at asperiores et rem ipsam possimus? Accusantium dolores explicabo aliquam.`)
 let loremArray = lorem.split(" ")
 
 let upper = []
@@ -377,7 +393,11 @@ console.log(upper.join(" "));
 
 //Praciting "REPLACE THE WORDS" 
 
-let secLorem = (`Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima ea, sit iusto necessitatibus alias ullam ipsa facere consectetur aliquam eos excepturi quaerat velit expedita doloremque quam rem distinctio. Accusantium, molestias accusamus, odio animi aut tenetur voluptates harum in inventore maiores, at asperiores et rem ipsam possimus? Accusantium dolores explicabo aliquam.`)
+let secLorem = (`Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Veritatis minima ea, sit iusto necessitatibus alias ullam ipsa facere consectetur 
+     aliquam eos excepturi quaerat velit expedita doloremque quam rem distinctio. Accusantium,
+      molestias accusamus, odio animi aut tenetur voluptates harum in inventore maiores, at asperiores et 
+      rem ipsam possimus? Accusantium dolores explicabo aliquam.`)
 let changeLlorem = 'sit'
 
 let replace = 'Javascript'
@@ -562,6 +582,8 @@ function userFunction(){
             alert('This is not palindrom')
     }
 }
+
+
 
 
 
