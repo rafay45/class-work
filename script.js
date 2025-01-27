@@ -8,31 +8,31 @@ fullName = []
 //Practicing "FOR LOOP MULTIPLICATION"
 
 for (var i = 1; i <= 10; i++) {
-    for (var j = 1; j <= 10; j++) {
-        document.write(i * j + '\n');
+  for (var j = 1; j <= 10; j++) {
+    document.write(i * j + '\n');
 
-    }
-    document.write('<br>')
+  }
+  document.write('<br>')
 }
 
 for (var i = 1; i <= 10; i++) {
-    for (var j = 1; j < i; j++) {
-        document.write(j + "-" + i + " ")
+  for (var j = 1; j < i; j++) {
+    document.write(j + "-" + i + " ")
 
-    }
-    document.write('<br>')
+  }
+  document.write('<br>')
 }
 
 //Practicing "TRIANGLE PATTERN"
 
 for (var i = 0; i <= 5; i++) {
-    for (var j = i; j <= 5; j++) {
-        document.write('&nbsp;&nbsp;&nbsp')
-    }
-    for (var k = 1; k <= (2 * i - 1); k++) {
-        document.write("* ")
-    }
-    document.write('<br>')
+  for (var j = i; j <= 5; j++) {
+    document.write('&nbsp;&nbsp;&nbsp')
+  }
+  for (var k = 1; k <= (2 * i - 1); k++) {
+    document.write("* ")
+  }
+  document.write('<br>')
 }
 
 //Practicing "ATM MATHOD"
@@ -41,9 +41,9 @@ let age = prompt('Enter your age')
 let salary = prompt('enter your salary')
 
 if (age >= 18 && salary >= 50000) {
-    alert('your salary approved')
+  alert('your salary approved')
 } else {
-    alert('incorrect information')
+  alert('incorrect information')
 }
 
 //Practicing "if else STATEMENT"
@@ -57,9 +57,9 @@ alert('password added')
 let loginEmail = prompt('Enter your Email')
 let loginPassword = prompt('Enter your password')
 if (enterEmail === loginEmail && enterPassword === loginPassword) {
-    document.write('<h1>Welcome to our website</h1>')
+  document.write('<h1>Welcome to our website</h1>')
 } else {
-    alert('incorrect!')
+  alert('incorrect!')
 }
 
 //Practicing "DUKAAN METHOD"
@@ -71,38 +71,38 @@ let choise = prompt('haddi waala? (yes or not)')
 let _choise = prompt('keema ya ghost (keema ya ghost)')
 
 if (meet === 'cow' || 'got') {
-    if (meet === 'cow') {
-        alert('ok')
-        if (choise === 'yes') {
-            // alert('ghost haiga')
-            if (_choise === 'keema' || _choise === 'ghost') {
-                alert('1000 dedo')
-            } else {
-                alert('nai hai')
-            }
-        } else {
-            alert('okay')
-        }
+  if (meet === 'cow') {
+    alert('ok')
+    if (choise === 'yes') {
+      // alert('ghost haiga')
+      if (_choise === 'keema' || _choise === 'ghost') {
+        alert('1000 dedo')
+      } else {
+        alert('nai hai')
+      }
     } else {
-        alert('meet only cow and got')
+      alert('okay')
     }
-    if (meet === 'got') {
-        // alert('okay')
+  } else {
+    alert('meet only cow and got')
+  }
+  if (meet === 'got') {
+    // alert('okay')
 
 
-        if (choise === 'yes') {
-            alert('ghost haiga')
-            if (_choise === 'keema' || _choise === 'ghost') {
-                alert('1000 dedo')
-            } else {
-                alert('nai hai')
-            }
-        } else {
-            alert('okay')
-        }
+    if (choise === 'yes') {
+      alert('ghost haiga')
+      if (_choise === 'keema' || _choise === 'ghost') {
+        alert('1000 dedo')
+      } else {
+        alert('nai hai')
+      }
+    } else {
+      alert('okay')
     }
+  }
 } else {
-    alert('ghot nai hai agla laga chal')
+  alert('ghot nai hai agla laga chal')
 }
 
 //Practicing "VAR LET CONST"
@@ -181,12 +181,12 @@ let userInp = prompt('Check if a number is a palindrome or not.')
 let result = "";
 
 for (var i = userInp.length - 1; i >= 0; i--) {
-    result += userInp[i]
+  result += userInp[i]
 }
 if (result === userInp) {
-    alert('This is a palindrome')
+  alert('This is a palindrome')
 } else {
-    alert('This is not palindrome')
+  alert('This is not palindrome')
 }
 
 //Practicing "CHECK BIGGEST NAME"
@@ -197,9 +197,9 @@ let fruits = [`Apple', 'Banana', 'Mango', 'Orange', 'Grapes', 'Pineapple',
 let biggestName = fruits[0]
 
 for (var i = 0; i < fruits.length; i++) {
-    if (fruits[i].length > biggestName.length) {
-        biggestName = fruits[i]
-    }
+  if (fruits[i].length > biggestName.length) {
+    biggestName = fruits[i]
+  }
 }
 console.log(`The longest fruits is ${biggestName}`)
 
@@ -220,15 +220,15 @@ let students = ['Wasay', 'Hamza', 'Rafay', 'Sahiban']
 let isPresent = false
 
 for (var i = 0; i < students.length; i++) {
-    if (sir.toLowerCase() === students[i].toLowerCase()) {
-        isPresent = true
-        break
-    }
+  if (sir.toLowerCase() === students[i].toLowerCase()) {
+    isPresent = true
+    break
+  }
 }
 if (isPresent) {
-    alert('Yes sir am Present')
+  alert('Yes sir am Present')
 } else {
-    alert('Sir, Please call right student')
+  alert('Sir, Please call right student')
 }
 
 //Practicing "PALINDRON OR NOT"
@@ -236,15 +236,15 @@ if (isPresent) {
 var str = "madam";
 var reversestr = "";
 for (var i = str.length - 1; i >= 0; i--) {
-    reversestr += str[i];
+  reversestr += str[i];
 }
 if (reversestr === str) {
-    console.log
-        ('this is a plaindrome word');
+  console.log
+    ('this is a plaindrome word');
 }
 else {
-    console.log
-        (" this is not a plaindrome word");
+  console.log
+    (" this is not a plaindrome word");
 }
 
 //racticing "TABLE START & END"
@@ -254,20 +254,20 @@ let table = prompt('Enrer a table number')
 let end = prompt('ente a end number')
 
 for (var i = start; i <= end; i++) {
-    document.write(`${table} x ${i} = ${table * i} <br>`)
+  document.write(`${table} x ${i} = ${table * i} <br>`)
 }
 
 //Practicing "ELSE IF STATEMENT"
 
 let weather = prompt('How is the weather');
 if (weather == 'sunny') {
-    document.write('weather is sunny');
+  document.write('weather is sunny');
 } else if (weather == 'Rainy') {
-    document.write('Wear a raincoat');
+  document.write('Wear a raincoat');
 } else if (weather == 'snowy') {
-    document.write('wear a sweatshirt');
+  document.write('wear a sweatshirt');
 } else {
-    document.write("nothing")
+  document.write("nothing")
 }
 
 //Practicing "CHECK AMOUNT"
@@ -276,9 +276,9 @@ var userinp = +prompt('enter your amount');
 
 var amount = 20000
 if (amount > '20000') {
-    document.write('amount are not available')
+  document.write('amount are not available')
 } else {
-    document.write(`amount are available ${amount - userinp}`)
+  document.write(`amount are available ${amount - userinp}`)
 }
 
 //Praciting "REPLACE THE WORDS" 
@@ -298,19 +298,19 @@ let changeWord = prompt('Enter a New Word')
 
 let found = false
 
-for(var i = 0; i < convert.length; i++){
-    if(convert[i].toLowerCase() == userWant){
-                 convert[i] = changeWord
-               found = true
-            }
+for (var i = 0; i < convert.length; i++) {
+  if (convert[i].toLowerCase() == userWant) {
+    convert[i] = changeWord
+    found = true
+  }
 }
-if(found){
-    document.write(`word changed ${convert.join(" ")}`)
-    }else {
-        alert("The word you want to change was not found in the paragraph.");
-    }
+if (found) {
+  document.write(`word changed ${convert.join(" ")}`)
+} else {
+  alert("The word you want to change was not found in the paragraph.");
+}
 
-    document.write(convert.join(" "));
+document.write(convert.join(" "));
 
 //Praciting "REPLACE THE WORDS" 
 
@@ -332,17 +332,17 @@ let userA = userInpA.split(" ")
 
 
 
-for(var i = convertA.length; i < convertPara.length; i++){
-      if(convertPara[i] == convertA){
-        convertPara[i] = userA
-      }
+for (var i = convertA.length; i < convertPara.length; i++) {
+  if (convertPara[i] == convertA) {
+    convertPara[i] = userA
+  }
 }
 console.log(convertPara.join("  "));
 document.write(convertPara.join("  "));
 
 
 let i,
-z = '';
+  z = '';
 for (i = 0; i < 5; i = i + 2) {
   z += i;
 }
@@ -365,10 +365,10 @@ let oldWord = firstWord.split(" ")
 let secondWord = prompt('Enter a New word')
 let newWord = secondWord.split(" ")
 
-for(i = 0; i < convertArray.length; i++){
-    if(convertArray[i] == oldWord){
-        convertArray[i] = newWord
-    }
+for (i = 0; i < convertArray.length; i++) {
+  if (convertArray[i] == oldWord) {
+    convertArray[i] = newWord
+  }
 }
 document.write(newWord.join(" "))
 document.write(convertArray.join(" "))
@@ -386,8 +386,8 @@ let loremArray = lorem.split(" ")
 
 let upper = []
 
-for (var i = 0; i < loremArray.length; i++){
-   upper.push(loremArray[i][0].toUpperCase()+loremArray[i].slice(1))  
+for (var i = 0; i < loremArray.length; i++) {
+  upper.push(loremArray[i][0].toUpperCase() + loremArray[i].slice(1))
 }
 console.log(upper.join(" "));
 
@@ -404,16 +404,16 @@ let replace = 'Javascript'
 
 
 
-for(var i = 0; i < secLorem.length; i++){
-    if(secLorem.slice(i, i + changeLlorem.length) == changeLlorem){
-        console.log("Found", [i]);
-        secLorem = (secLorem.slice(0, i) + replace + secLorem.slice(i + changeLlorem.length));
+for (var i = 0; i < secLorem.length; i++) {
+  if (secLorem.slice(i, i + changeLlorem.length) == changeLlorem) {
+    console.log("Found", [i]);
+    secLorem = (secLorem.slice(0, i) + replace + secLorem.slice(i + changeLlorem.length));
 
-    }
-    else{
-        console.log("Not Found");
+  }
+  else {
+    console.log("Not Found");
 
-    }   
+  }
 }
 
 console.log(secLorem);
@@ -424,25 +424,25 @@ let numbers = [12, 384, 76, 100, 455, 678, 3749, 1827]
 let biggestNumber = numbers[0]
 
 for (var i = 0; i < numbers.length; i++) {
-    if (numbers[i] > biggestNumber) {
-        biggestNumber = numbers[i]
+  if (numbers[i] > biggestNumber) {
+    biggestNumber = numbers[i]
 
-    }
+  }
 }
 document.write(`The Biggest Number is  ${biggestNumber}<br>`)
 
 //Practicing "FOR LOOP"
 
- var month = prompt("Enter a month");
- var charsInMonth = month.length;
- if (charsInMonth > 3) {
- monthAbbrev = month.slice(0, 3);
- }
- document.write(monthAbbrev)
+var month = prompt("Enter a month");
+var charsInMonth = month.length;
+if (charsInMonth > 3) {
+  monthAbbrev = month.slice(0, 3);
+}
+document.write(monthAbbrev)
 
 for (let i = 99; i > 0; i--) {
-    console.log(`${i} bottles of beer on the wall, ${i} bottles of beer.`);
-    console.log(`Take one down and pass it around, ${i - 1} bottles of beer on the wall.`);
+  console.log(`${i} bottles of beer on the wall, ${i} bottles of beer.`);
+  console.log(`Take one down and pass it around, ${i - 1} bottles of beer on the wall.`);
 }
 console.log("No more bottles of beer on the wall!");
 
@@ -453,16 +453,16 @@ let cityToCheck = prompt("Enter your city name:");
 
 let founds = false
 
-for (var i = 0; i < cleanestCities.length; i++){
-    if(cleanestCities[i].toLowerCase() === cityToCheck.toLowerCase()){
-        document.write(`Your city is one of the cleanest.`)
-        found = true
-        break  
-    }
+for (var i = 0; i < cleanestCities.length; i++) {
+  if (cleanestCities[i].toLowerCase() === cityToCheck.toLowerCase()) {
+    document.write(`Your city is one of the cleanest.`)
+    found = true
+    break
+  }
 }
 
-if(!founds){
-    document.write(`Your city is not one of the cleanest.`)
+if (!founds) {
+  document.write(`Your city is not one of the cleanest.`)
 }
 
 //Practicing "FOR LOOP"
@@ -522,7 +522,7 @@ var check = text.search("Rafay");
 console.log(text)
 console.log(check);
 
-var check = text.slice(0 , 23);
+var check = text.slice(0, 23);
 console.log(text)
 console.log(check);
 
@@ -542,46 +542,154 @@ var check = text.repeat(2);
 console.log(text)
 console.log(check);
 
-var check = text.replaceAll("Hello" , "hello");
+var check = text.replaceAll("Hello", "hello");
 console.log(text)
 console.log(check);
 
 for (var i = 0; i < 10; i++) {
-    console.log(i);
-    for (var j = 10; j < 13; j++) {
-        console.log(j);
+  console.log(i);
+  for (var j = 10; j < 13; j++) {
+    console.log(j);
 
-    }
+  }
 
 }
 
-// Practicing "JS FUNCTIONS"
+//Practicing "JS FUNCTIONS"
 
 let userPara = (`<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
     Eius sapiente inventore, eligendi nesciunt nisi ea laboriosam 
     non tenetur consequuntur dolor vitae assumenda, aspernatur autem iure, iusto explicabo vel?
-    Voluptatibus, culpa.`)
-    document.write(userPara)
+    Voluptatibus, culpa.<br><br>`)
+document.write(userPara)
 
 function user() {
-    let replaceWord = prompt('which word you want to replace').toLowerCase();
-    let secReplaceWord = prompt('Enter New word').toLowerCase()  
-   userPara = userPara.replaceAll(replaceWord , "<b>" + secReplaceWord + "</b>") 
-   document.write(userPara) 
+  let replaceWord = prompt('which word you want to replace').toLowerCase();
+  let secReplaceWord = prompt('Enter New word').toLowerCase()
+  userPara = userPara.replaceAll(replaceWord, "<b>" + secReplaceWord + "</b>")
+  document.write(userPara)
 }
 
-function userFunction(){
-    let userWant = prompt(`If you want to check your word Then Enter your word \n let's check`)
-    let checked = "";
-    for (var i = userWant.length - 1; i >= 0; i--){
-           checked += userWant[i]
-    }
-    if(checked === userWant) {
-        alert('This is a palindrom')
-    }else{
-            alert('This is not palindrom')
-    }
+function userFunction() {
+  let userWant = prompt(`If you want to check your word Then Enter your word \n let's check`)
+  let checked = "";
+  for (var i = userWant.length - 1; i >= 0; i--) {
+    checked += userWant[i]
+  }
+  if (checked === userWant) {
+    alert('This is a palindrom')
+  } else {
+    alert('This is not palindrom')
+  }
 }
+
+let allFruits = ("Apple , Mango , Banana , Graps , Strawberry");
+document.write(allFruits)
+
+function fruitsFunction() {
+  let newFruits = ["Apple", "Mango", "Banana", "Graps", "Strawberry"];
+
+  let biggestFruits = newFruits[0]
+
+  for (var i = 0; i < newFruits.length; i++) {
+    if (newFruits[i].length > biggestFruits.length) {
+      biggestFruits = newFruits[i]
+    }
+
+  }
+  document.write(`The Bigggest Fruit is <b>${biggestFruits}</b>`)
+}
+
+
+function garments() {
+  let pants = prompt(`1. Jeans Pant - 3000 \n 2. Dress Pant - 5000 \n Choose a Numbere Please`)
+
+
+
+
+  if (pants === '1') {
+    alert(`Here's our account number : 098876544332 \n \n When will you be pay then click 'OK'`)
+    document.write(`Your choice is <b>Jeans Pant<b>`)
+  } else if (pants === '2') {
+    alert(`Here's our account number : 098876544332 \n \n When will you be pay then click 'OK'`)
+    document.write(`Your choice is <b>Dress Pant<b>`)
+  } else {
+    alert(`If you're intersted then Enter a correct number`)
+  }
+
+}
+
+function changeWord() {
+  var text = document.getElementById('para').innerHTML = `<b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga neque ipsa hic voluptatum
+        delectus expedita natus eaque, dolores minima rerum illum ullam suscipit! Possimus vitae ipsa natus tenetur
+        consectetur.</b>`
+  console.log(text);
+
+
+}
+
+let arr = ["Usman", "rafay", ["wasay", "sahiban", "rizwan"], "Hello"]
+let find = ["wasay"]
+
+let presentCount = 0;
+let absentCount = 0;
+let leftCount = 0;
+
+let totalPresent = [];
+
+function attendance() {
+  let studentAtendance = prompt("Student Attendance");
+  totalPresent.push(studentAtendance)
+}
+
+function totalMark() {
+  // console.log(totalPresent);
+
+  for (var i = 0; i < totalPresent.length; i++) {
+    if (totalPresent[i] == 'p') {
+      ++presentCount
+
+    }
+    else if (totalPresent[i] == 'a') {
+      ++absentCount
+    }
+    else if (totalPresent[i] == 'l') {
+      ++leftCount
+    } else {
+      console.log('Invalid Present');
+
+    }
+  }
+
+  console.log("Present is:" + presentCount);
+  console.log("absent is:" + absentCount);
+  console.log("left is:" + leftCount);
+
+
+
+}
+
+let computer = Math.random() * 10
+console.log(computer);
+
+let userInput = +prompt('Enter a number')
+console.log(userInp);
+
+if (computer == userInp) {
+  console.log("you're Win");
+
+} else {
+  console.log("you're lost");
+
+}
+
+
+
+
+
+
+
+
 
 
 
