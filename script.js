@@ -1,11 +1,11 @@
 
-//Practicing "ARRAY"
-//
+// //Practicing "ARRAY"
+// //
 firstName = ['Abdul', 'Muhammad', 'Barbar']
 lastName = ['Rafay', 'Rizwan', 'Azam']
 fullName = []
 
-//Practicing "FOR LOOP MULTIPLICATION"
+// //Practicing "FOR LOOP MULTIPLICATION"
 
 for (var i = 1; i <= 10; i++) {
   for (var j = 1; j <= 10; j++) {
@@ -683,19 +683,120 @@ if (computer == userInp) {
 
 }
 
+let date = new Date()
+
+console.log(date.getDate());
+console.log(date.getDay());
+console.log(date.getFullYear());
+console.log(date.getHours());
+console.log(date.getMinutes());
+console.log(date.getSeconds());
+console.log();
+console.log();
 
 
+let dateOfBirth = new Date("08/07/2005")
+console.log(dateOfBirth);
+
+let newDate = new Date()
+console.log(newDate);
+
+let checkTime = dateOfBirth.getTime()
+console.log(checkTime);
 
 
+let checkDate = date.getTime()
+console.log(checkDate);
 
 
+let totalTime = checkTime - checkDate;
+console.log(totalTime);
+
+let dDiff = totalTime
+console.log(dDiff);
+
+dDiff = Math.floor(dDiff)
+
+var d = new Date("July 21, 1983 13:25:00");
+console.log(d);
+
+var currentAge = prompt("Apni age enter karein.");
+var yearsEligibleToVote = currentAge * 2.5;
+console.log(yearsEligibleToVote);
+console.log(currentAge);
 
 
+var profit = "200" - "150"; // Result: 50 (as a number)
+console.log(profit);
+
+var profit = isNaN(200 - "duck"); // NaN (Not a Number)
+console.log(profit);
+
+var currentAge = prompt("Apni age enter karein.");
+var qualifyingAge = parseInt(currentAge) + 1; // Ab sahi addition hogi
+console.log(qualifyingAge);
+
+var myInteger = parseFloat(prompt("enter a number")); // Result: 1
+console.log(myInteger);
+
+var num = Number("23455")
+console.log(num);
 
 
+var agee = "hello"; 
+if (isNaN(agee)) {
+    console.log("Yeh number nahi hai!");
+} else {
+    console.log("Yeh ek valid number hai!"); 
+}
+
+var integerString = "24";
+var num = Number(integerString);
+
+console.log(num); // Output: 24 (as a number)
+
+var floatingNumString = "24.9876";
+var num = Number(floatingNumString);
+
+console.log(num); // Output: 24.9876 (as a number)
+
+var numberAsNumber = 100;
+var numberAsString = numberAsNumber.toString();
+
+console.log(numberAsString); // Output: "1234" (as a string)
+
+var bigNumber = 100000;
+var formattedNumber = bigNumber.toLocaleString();
+
+console.log(formattedNumber); // Output: "1,000,000"
+
+var price = 9.95;
+var taxRate = 0.065; // 6.5% ko decimal form mein likha
+var total = price + (price * taxRate);
+
+console.log(total); // Output: 10.59675 (Extra decimals)
+
+let totalPrice = total.toFixed(2)
+console.log(totalPrice);
+
+let convertNum = Number(totalPrice)
+console.log(convertNum);
+
+var currencyTotal = "$" + convertNum;
+console.log(currencyTotal); // Output: "$10.60"
 
 
+let number = 1.555
+// let checkNumber = number.toFixed(2)
+// console.log(checkNumber);
+let str = number.toString()
+if(str.charAt(str.length - 1) === "5"){
+  str = str.slice(0, str.length -1) + "6"
+}
 
+number = Number(str)
+let toFixed = number.toFixed(2)
+console.log(toFixed);
 
 
 
