@@ -800,4 +800,82 @@ console.log(toFixed);
 
 
 
+var rightNow = new Date("08/07/2005");
+console.log(rightNow);
 
+var onlyDate = rightNow.getMonth()
+console.log(onlyDate + 1);
+
+
+var dateString = rightNow.toString();
+console.log(dateString);
+
+var theDay = rightNow.getDay();
+console.log(theDay);
+
+var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thursday", "Fri", "Sat"];
+var now = new Date();
+var theDay = now.getDay();
+var nameOfToday = dayNames[theDay];
+
+console.log("Aaj ka din hai: " + nameOfToday);
+
+var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thursday", "Fri", "Sat"];
+var newDatee = new Date()
+var getDay = newDatee.getDay()
+var typeOfDay = dayNames[getDay]
+ console.log("The day is " + typeOfDay);
+ 
+
+ var d = new Date();
+var currentMonth = d.getMonth(); // 0 se 11 tak
+console.log(currentMonth);
+
+var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+var newMonth = d.getMonth()
+var typeOfMonth = monthNames[newMonth] 
+console.log("The Month is: " + typeOfMonth);
+
+var dayOfMonth = d.getDate(); // 1 se 31 tak
+console.log(dayOfMonth);
+var dateString = dayOfMonth.toString()
+console.log(dateString);
+
+var hours = d.getHours() % 12 || 12; // 12-hour format
+console.log(hours);
+
+var millsSince = d.getTime();
+console.log("Milliseconds since 1970:", millsSince);
+
+var d = new Date();
+console.log("Date: " + d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear());
+console.log("Time: " + hours + ":" + d.getMinutes() + ":" + d.getSeconds());
+
+var d = new Date();
+var hours = d.getHours() % 12 || 12; // 12-hour format
+var minutes = d.getMinutes();
+var second = d.getSeconds()
+var ampm = d.getHours() >= 12 ? "PM" : "AM"; // 12 se bara ho to PM warna AM
+
+console.log("Time: " + hours + ":" + minutes  + ":" + second + " " + ampm);
+
+var datee = new date()
+var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+var month = datee.getMonth()
+var typeOfMonth = monthNames[month]
+console.log(typeOfMonth);
+
+let colorlength = ["a" , "b" , "c" , "d" , "e" , "f" , "1" , "2" , "3" , "4" , "5" , "6" , "7" , "8" , "9" , "0"]
+let color = "";
+
+for (var i = 0; i < 6; i++){
+    let colorRandom = Math.floor(Math.random() * colorlength.length)
+    color += colorlength[colorRandom]
+}
+alert("#" + color)
+
+let r = Math.floor(Math.random() * 255)
+let g = Math.floor(Math.random() * 255)
+let b = Math.floor(Math.random() * 255)
+
+alert(`rgb(${r},${g},${b})`)
